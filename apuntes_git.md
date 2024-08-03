@@ -1,6 +1,9 @@
 # Apuntes git.
+
 ## Teoria general
+
 Tenemos tres areas de trabajo:
+
 1. *Working Area:* Área de trabajo: archivos del proyecto en el que estamos trabajando.
 2. *Staging Area:* Área de puesta en escena: zona temporal donde los archivos modificados que necesitamos agregar a nuestro control de versiones están esperando ser agregadas al repositorio.
 3. *Repository:* Repositorio: archivos y registros en el repositorio
@@ -10,6 +13,7 @@ Acciones:
 2. *Commit:* Desde el área de puesta en escena hasta el repositorio haremos *commit*.
 
 ## Configuración bàsica GIT
+
 ```
 git config --global user.name minombre
 git config --global user.email email@dominio.com
@@ -32,6 +36,7 @@ git config --global core.autocrlf input
 `
 
 ## Inicio rápido de un nuevo repositorio.
+
 Consideraciones:
 - Git linea comandos instalado. 
 - GitHub CLI instalado. [url](https://cli.github.com/).
@@ -48,3 +53,34 @@ git push -u origin main
 
 ```
 Solo nos queda verificar que los cambios se han realizado en la url de Github.
+
+## Colaboración mediate Github
+
+Parece que hay dos maneras principales de colaborar en github sobre un repositorio dado:
+
+1. La primera opción es que el propietario del repositorio nos añada como colaborador, en los ajustes debe haber menú de colaboradores.
+2. La segunda opción es hacer un *Fork* del repositorio, esto creará una copia en nuestra cuenta de github, allí podremos hacer los cambios que queramos y luego se crea un Pull Request desde tu fork al repositorio original. La que se usa si no conocemos el propietario del repositorio o no hay una relación de confianza.
+
+### Usando la primera opción ...
+
+1. Asegurarse estar en el directorio del repositorio.
+2. Actualizar el repo local con los últimos cambios del remoto
+    ```
+    git pull origin main
+    ```
+3. Crea una nueva rama y te cambia a ella:
+    ```git checkout -b nueva-rama
+    git status
+    ```
+4. Hacer cambios ... añadirlos y  *comitear*
+    ```
+    git status
+    git add .
+    git commit -m "Añadidos los cambios X"
+    ```
+5. Subir rama al repositorio remoto
+    ```
+    git push origin nueva-rama
+    ```
+
+.... Faltan pasos :-P
