@@ -76,15 +76,15 @@ git checkout develop
 ``` 
 git branch --list
 ```
-3. Hacer cambios ... añadirlos y  *comitear*
+3. A ver que commits se han creado? Ei , pero de forma simplificada que si no saca demasiadas lineas y me pierdo.
     ```
-    git status
-    git add .
-    git commit -m "Añadidos los cambios X"
+    git log --pretty=oneline
     ```
-4. Subir rama al repositorio remoto
+4. Creo rama apuntes-git_gabriel, que es en lo que me voy a centrar estos dias
     ```
-    git push origin nueva-rama
+    git checkout -b apuntes-git_gabriel
     ```
-
-.... Faltan pasos :-P
+5. Ah i que quede constancia en github !
+```
+git push
+```
