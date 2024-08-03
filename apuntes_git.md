@@ -31,7 +31,7 @@ En windows substituir “input” por “true” en el siguiente comando
 git config --global core.autocrlf input 
 `
 
-## Inicio rápido de repositorio.
+## Inicio rápido de un nuevo repositorio.
 ```
 cd ruta/al/directorio/new_repo
 git init
