@@ -54,31 +54,35 @@ git push -u origin main
 ```
 Solo nos queda verificar que los cambios se han realizado en la url de Github.
 
-## Colaboración mediate Github
+# Colaboración mediate Github
 
 Parece que hay dos maneras principales de colaborar en github sobre un repositorio dado:
 
 1. La primera opción es que el propietario del repositorio nos añada como colaborador, en los ajustes debe haber menú de colaboradores.
 2. La segunda opción es hacer un *Fork* del repositorio, esto creará una copia en nuestra cuenta de github, allí podremos hacer los cambios que queramos y luego se crea un Pull Request desde tu fork al repositorio original. La que se usa si no conocemos el propietario del repositorio o no hay una relación de confianza.
 
-### Usando la primera opción ...
+## Documentando mi repo
 
-1. Asegurarse estar en el directorio del repositorio.
-2. Actualizar el repo local con los últimos cambios del remoto
-    ```
-    git pull origin main
-    ```
-3. Crea una nueva rama y te cambia a ella:
-    ```git checkout -b nueva-rama
-    git status
-    ```
-4. Hacer cambios ... añadirlos y  *comitear*
+1. Creo una rama nueva develop y me cambio a ella en un paso:
+```
+git checkout -b develop
+```
+Aunque me gusta hacer lo mismo con dos comandos por separado para aprender:
+```
+git branch develop
+git checkout develop
+```
+2. A ver cuantas ramas tengo en mi repo?
+``` 
+git branch --list
+```
+3. Hacer cambios ... añadirlos y  *comitear*
     ```
     git status
     git add .
     git commit -m "Añadidos los cambios X"
     ```
-5. Subir rama al repositorio remoto
+4. Subir rama al repositorio remoto
     ```
     git push origin nueva-rama
     ```
