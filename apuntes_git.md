@@ -1,4 +1,4 @@
-#Apuntes git.
+# Apuntes git.
 ## Teoria general
 Tenemos tres areas de trabajo:
 1. *Working Area:* Área de trabajo: archivos del proyecto en el que estamos trabajando.
@@ -10,16 +10,31 @@ Acciones:
 2. *Commit:* Desde el área de puesta en escena hasta el repositorio haremos *commit*.
 
 ## Configuración bàsica GIT
-`git config --global user.name minombre`
-`git config  --global user.email email@dominio.com` 
+```
+git config --global user.name minombre
+git config --global user.email email@dominio.com
+```
+
+Configuramos git para que la rama principal sea siempre "main". [Fuente](https://help.dreamhost.com/hc/es/articles/4466702078740-Configurar-git-para-usar-main-como-rama-principal)
+```
+git config --global init.defaultBranch main
+```
+
 Para editar la configuración en achivo de texto:
-`git config  - -global -e`
+```
+git config --global -e
+```
+
 *Falta contrastar información, no recuerdo su fuente* 
-- en windows substituir “input” por “true” en el siguiente comando
-`git config --global core.autocrlf input `
+En windows substituir “input” por “true” en el siguiente comando
+`
+git config --global core.autocrlf input 
+`
 
 ## Inicio rápido de repositorio.
-`cd ruta/al/directorio/new_repo
+```
+cd ruta/al/directorio/new_repo
 git init
 git add . #añade todos los archivos existentes
 git commit -m "Primer commit"
+```
