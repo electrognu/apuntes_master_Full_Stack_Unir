@@ -32,9 +32,19 @@ git config --global core.autocrlf input
 `
 
 ## Inicio rápido de un nuevo repositorio.
+Consideraciones:
+- Git linea comandos instalado. 
+- GitHub CLI instalado. [url](https://cli.github.com/).
+- Tener en cuenta que la rama principal es *main*. 
+
 ```
 cd ruta/al/directorio/new_repo
 git init
 git add . #añade todos los archivos existentes
 git commit -m "Primer commit"
+gh auth login
+gh repo create nombre-del-repo --source=. --remote=origin --description "Descripcion del repo"
+git push -u origin main
+
 ```
+Solo nos queda verificar que los cambios se han realizado en la url de Github.
