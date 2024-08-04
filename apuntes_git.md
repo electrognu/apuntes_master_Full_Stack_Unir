@@ -88,11 +88,17 @@ git branch --list
     ```
     git log --pretty=oneline
     ```
-4. Creo rama apuntes-git_gabriel, que es en lo que me voy a centrar estos dias
+    o simplemente
+    ```bash
+    git log --oneline
+    ```
+    
+    
+5. Creo rama apuntes-git_gabriel, que es en lo que me voy a centrar estos dias
     ```
     git checkout -b apuntes-git_gabriel
     ```
-5. Ah i que quede constancia en github !
+6. Ah i que quede constancia en github !
 ```
 git push
 ```
