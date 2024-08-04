@@ -55,7 +55,10 @@ git push -u origin main
 Solo nos queda verificar que los cambios se han realizado en la url de Github.
 
 ## Ver estructura de las ramas
+
 Quizas sea más adecuado usar Gitkraken para estos menesteres, pero ya que estoy en linea de comandos...
+ 
+Historia de los commits incluyendo todas las ramas.
 
 
 # Colaboración mediate Github
@@ -71,10 +74,11 @@ Parece que hay dos maneras principales de colaborar en github sobre un repositor
 ```
 git checkout -b develop
 ```
-Aunque me gusta hacer lo mismo con dos comandos por separado para aprender:
+Aunque me gusta hacer lo mismo con dos comandos por separado para aprender y de paso lo subo al remoto:
 ```
 git branch develop
 git checkout develop
+git push -u origin develop
 ```
 2. A ver cuantas ramas tengo en mi repo?
 ``` 
