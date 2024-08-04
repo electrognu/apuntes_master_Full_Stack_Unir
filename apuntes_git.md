@@ -54,6 +54,10 @@ git push -u origin main
 ```
 Solo nos queda verificar que los cambios se han realizado en la url de Github.
 
+## Ver estructura de las ramas
+Quizas sea más adecuado usar Gitkraken para estos menesteres, pero ya que estoy en linea de comandos...
+
+
 # Colaboración mediate Github
 
 Parece que hay dos maneras principales de colaborar en github sobre un repositorio dado:
