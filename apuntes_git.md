@@ -113,5 +113,5 @@ git checkout -b apuntes-git_gabriel
 6. Ah y que quede constancia en github !
 
 ```
-git push
+git push origin
 ```
