@@ -98,4 +98,5 @@ git branch -l
 
 5. 
 
-## 
+## Liandola con github
+No se me ha ocurrido retocar este fichero en local de la rama apuntes-md sin antes hacer un Pull de la rama ... tengo la sensación es que estoy liandola :-)
