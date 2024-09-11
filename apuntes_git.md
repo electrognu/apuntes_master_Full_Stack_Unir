@@ -57,6 +57,11 @@ git push -u origin main
 ```
 Solo nos queda verificar que los cambios se han realizado en la url de Github.
 
+## Autenticarse con github CLI 
+```
+gh auth login
+```
+
 ## Colaboración mediate Github
 
 Parece que hay dos maneras principales de colaborar en github sobre un repositorio dado:
@@ -70,7 +75,7 @@ Parece que hay dos maneras principales de colaborar en github sobre un repositor
 ```
 git checkout -b develop
 ```
-Aunque me gusta hacer lo mismo con dos comandos por separado para aprender:
+Aunque me gusta hacer lo mismo con dos comandos por separado:
 ```
 git branch develop
 git checkout develop
@@ -78,6 +83,7 @@ git checkout develop
 2. A ver cuantas ramas tengo en mi repo?
 ``` 
 git branch --list
+git branch -l
 ```
 3. Hacer cambios ... añadirlos y  *comitear*
     ```
@@ -90,4 +96,6 @@ git branch --list
     git push origin nueva-rama
     ```
 
-.... Faltan pasos :-P
+5. 
+
+## 
