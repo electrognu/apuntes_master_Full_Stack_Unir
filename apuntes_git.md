@@ -37,7 +37,7 @@ git config --global core.autocrlf input
 
 ## Inicio rápido de un nuevo repositorio.
 
-Consideraciones:
+### Consideraciones:
 - Git linea comandos instalado. 
 - GitHub CLI instalado. [url](https://cli.github.com/).
 - Tener en cuenta que la rama principal es *main*. 
@@ -45,7 +45,10 @@ Consideraciones:
 ```
 cd ruta/al/directorio/new_repo
 git init
-git add . #añade todos los archivos existentes
+```
+Añadir ficheros del proyecto, asegurarse que el archivo  *__.gitignore__* es correcto.
+```
+git add . #atentos a archivos que deberian esta en .gitignore
 git commit -m "Primer commit"
 gh auth login
 gh repo create nombre-del-repo --source=. --remote=origin --description "Descripcion del repo"
@@ -54,7 +57,7 @@ git push -u origin main
 ```
 Solo nos queda verificar que los cambios se han realizado en la url de Github.
 
-# Colaboración mediate Github
+## Colaboración mediate Github
 
 Parece que hay dos maneras principales de colaborar en github sobre un repositorio dado:
 
