@@ -100,3 +100,18 @@ git branch -l
 
 ## Liandola con github
 No se me ha ocurrido retocar este fichero en local de la rama apuntes-md sin antes hacer un Pull de la rama ... tengo la sensación es que estoy liandola :-)
+
+```
+git push origin apuntes-md
+git checkout main
+   Your branch is behind 'origin/main' by 5 commits, and can be fast-forwarded.
+   (use "git pull" to update your local branch)
+git pull
+   Updating 8eefb4b..a8d8c3c
+   Fast-forward
+    apuntes_git.md | 71    ++++++++++++++++++---------
+    1 file changed, 45 insertions(+), 26 deletions(-)
+```
+No me dejaba guardar los cambios porque no coincidian los ficheros , he de cambiarme a `apuntes-md` otra vez.
+
+Seguiremos con merge :-P
