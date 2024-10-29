@@ -37,7 +37,7 @@ git config --global core.autocrlf input
 
 ## Inicio rápido de un nuevo repositorio.
 
-Consideraciones:
+### Consideraciones:
 - Git linea comandos instalado. 
 - GitHub CLI instalado. [url](https://cli.github.com/).
 - Tener en cuenta que la rama principal es *main*. 
@@ -45,7 +45,10 @@ Consideraciones:
 ```
 cd ruta/al/directorio/new_repo
 git init
-git add . #añade todos los archivos existentes
+```
+Añadir ficheros del proyecto, asegurarse que el archivo  *__.gitignore__* es correcto.
+```
+git add . #atentos a archivos que deberian esta en .gitignore
 git commit -m "Primer commit"
 gh auth login
 gh repo create nombre-del-repo --source=. --remote=origin --description "Descripcion del repo"
@@ -54,14 +57,13 @@ git push -u origin main
 ```
 Solo nos queda verificar que los cambios se han realizado en la url de Github.
 
-## Ver estructura de las ramas
+## Autenticarse con github CLI 
+```
+gh auth login
+```
 
-Quizas sea más adecuado usar Gitkraken para estos menesteres, pero ya que estoy en linea de comandos...
- 
-Historia de los commits incluyendo todas las ramas.
+## Colaboración mediate Github
 
-
-# Colaboración mediate Github
 
 Parece que hay dos maneras principales de colaborar en github sobre un repositorio dado:
 
@@ -74,7 +76,9 @@ Parece que hay dos maneras principales de colaborar en github sobre un repositor
 ```
 git checkout -b develop
 ```
+
 Aunque me gusta hacer lo mismo con dos comandos por separado para aprender y de paso lo subo al remoto:
+
 ```
 git branch develop
 git checkout develop
@@ -83,6 +87,7 @@ git push -u origin develop
 2. A ver cuantas ramas tengo en mi repo?
 ``` 
 git branch --list
+git branch -l
 ```
 3. A ver que commits se han creado? Ei , pero de forma simplificada que si no saca demasiadas lineas y me pierdo.
     ```
@@ -92,7 +97,9 @@ git branch --list
     ```
     git checkout -b apuntes-git_gabriel
     ```
-5. Ah i que quede constancia en github !
+
+5. Ah y que quede constancia en github !
 ```
 git push
 ```
+
