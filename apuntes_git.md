@@ -38,16 +38,20 @@ En windows substituir “input” por “true” en el siguiente comando
 
 ## Inicio rápido de un nuevo repositorio.
 
-Consideraciones:
 
-- Git linea comandos instalado.
+### Consideraciones:
+- Git linea comandos instalado. 
+
 - GitHub CLI instalado. [url](https://cli.github.com/).
 - Tener en cuenta que la rama principal es _main_.
 
 ```
 cd ruta/al/directorio/new_repo
 git init
-git add . #añade todos los archivos existentes
+```
+Añadir ficheros del proyecto, asegurarse que el archivo  *__.gitignore__* es correcto.
+```
+git add . #atentos a archivos que deberian esta en .gitignore
 git commit -m "Primer commit"
 gh auth login
 gh repo create nombre-del-repo --source=. --remote=origin --description "Descripcion del repo"
@@ -57,13 +61,15 @@ git push -u origin main
 
 Solo nos queda verificar que los cambios se han realizado en la url de Github.
 
-## Ver estructura de las ramas
 
-Quizas sea más adecuado usar Gitkraken para estos menesteres, pero ya que estoy en linea de comandos...
+## Autenticarse con github CLI 
+```
+gh auth login
+```
 
-Historia de los commits incluyendo todas las ramas.
+## Colaboración mediate Github
 
-# Colaboración mediate Github
+
 
 Parece que hay dos maneras principales de colaborar en github sobre un repositorio dado:
 
@@ -90,28 +96,21 @@ git push -u origin develop
 
 ```
 git branch --list
+git branch -l
 ```
 
 3. A ver que commits se han creado? Ei , pero de forma simplificada que si no saca demasiadas lineas y me pierdo.
 
+    ```
+    git log --pretty=oneline
+    ```
+4. Creo rama apuntes-git_gabriel, que es en lo que me voy a centrar estos dias
+    ```
+    git checkout -b apuntes-git_gabriel
+    ```
+
+5. Ah y que quede constancia en github !
 ```
-git log --pretty=oneline
+git push
 ```
 
-o simplemente
-
-```bash
-git log --oneline
-```
-
-5. Creo rama apuntes-git_gabriel, que es en lo que me voy a centrar estos dias
-
-```
-git checkout -b apuntes-git_gabriel
-```
-
-6. Ah y que quede constancia en github !
-
-```
-git push origin
-```
