@@ -64,6 +64,7 @@ gh auth login
 
 ## Colaboración mediate Github
 
+
 Parece que hay dos maneras principales de colaborar en github sobre un repositorio dado:
 
 1. La primera opción es que el propietario del repositorio nos añada como colaborador, en los ajustes debe haber menú de colaboradores.
@@ -75,43 +76,30 @@ Parece que hay dos maneras principales de colaborar en github sobre un repositor
 ```
 git checkout -b develop
 ```
-Aunque me gusta hacer lo mismo con dos comandos por separado:
+
+Aunque me gusta hacer lo mismo con dos comandos por separado para aprender y de paso lo subo al remoto:
+
 ```
 git branch develop
 git checkout develop
+git push -u origin develop
 ```
 2. A ver cuantas ramas tengo en mi repo?
 ``` 
 git branch --list
 git branch -l
 ```
-3. Hacer cambios ... añadirlos y  *comitear*
+3. A ver que commits se han creado? Ei , pero de forma simplificada que si no saca demasiadas lineas y me pierdo.
     ```
-    git status
-    git add .
-    git commit -m "Añadidos los cambios X"
+    git log --pretty=oneline
     ```
-4. Subir rama al repositorio remoto
+4. Creo rama apuntes-git_gabriel, que es en lo que me voy a centrar estos dias
     ```
-    git push origin nueva-rama
+    git checkout -b apuntes-git_gabriel
     ```
 
-5. 
-
-## Liandola con github
-No se me ha ocurrido retocar este fichero en local de la rama apuntes-md sin antes hacer un Pull de la rama ... tengo la sensación es que estoy liandola :-)
-
+5. Ah y que quede constancia en github !
 ```
-git push origin apuntes-md
-git checkout main
-   Your branch is behind 'origin/main' by 5 commits, and can be fast-forwarded.
-   (use "git pull" to update your local branch)
-git pull
-   Updating 8eefb4b..a8d8c3c
-   Fast-forward
-    apuntes_git.md | 71    ++++++++++++++++++---------
-    1 file changed, 45 insertions(+), 26 deletions(-)
+git push
 ```
-No me dejaba guardar los cambios porque no coincidian los ficheros , he de cambiarme a `apuntes-md` otra vez.
 
-Seguiremos con merge :-P
