@@ -1,4 +1,5 @@
-Instalando MySql:
+# Instalando MySql:
+
 Instalo servidor 8.0 desde linea de comandos: sudo apt install mysql-server-8.0
 Bajo de internet el paquete .deb y lo instalo con el comando: sudo apt install ./mysql-workbench-community_8.038-1ubuntu24.04_amd64.deb
 
@@ -13,4 +14,16 @@ FLUSH PRIVILEGES;
 \q
 
 Ahora ya me deja entrar y crear bases de datos ...
+
+# Configurando un usuario para peticiones de prueba Mysql.
+
+Para evitar que se produzcan cambios en la estructura de la base de datos, 
+el usuario solo podra realizar operaciones CRUD, pero no de administración.
+
+```
+CREATE USER 'app_user'@'localhost' IDENTIFIED BY 'password_app';
+GRANT SELECT, INSERT, UPDATE, DELETE ON mi_base_datos.* TO 'app_user'@'localhost';
+FLUSH PRIVILEGES; 
+```
+
 

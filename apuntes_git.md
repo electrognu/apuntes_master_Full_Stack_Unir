@@ -109,8 +109,10 @@ git branch -l
     git checkout -b apuntes-git_gabriel
     ```
 
-5. Ah y que quede constancia en github !
-```
-git push
-```
+## Algunas cosas más
+
+Borrar una rama del repositorio.
+```git branch -d <nombre de rama>```
+
+
 
