@@ -14,7 +14,19 @@ Acciones:
 2. _Commit:_ Desde el área de puesta en escena hasta el repositorio haremos _commit_.
 
 ## Configuración bàsica GIT
+### Configuración varias cuentas github.
+Al tener dos cuentas en github he optado por crear dos alias los cuales configuren el nombre de email y nombre de usuario, de esta manear al iniciar un repositorio ejecuto `git user1` para poner nombre y email correspondiente. 
+Añadimos algo así en el apartado alias de la configuración global, a la cual se accede con `git config --global -e`:
+```
+[alias]
+    user1 = "!git config user.name 'nombreUser1 apellidoUser1';\
+        git config user.email emailUser1@mail.com"
+    user2 = "!git config user.name 'nombreUser2 apellidoUser2';\
+        git config user.email emaliUser2@mail.com"
 
+```
+
+### Configuración global
 ```
 git config --global user.name minombre
 git config --global user.email email@dominio.com
